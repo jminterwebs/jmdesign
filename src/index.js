@@ -1,12 +1,27 @@
+import 'index.css';
+
+// React imports
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { render } from 'react-dom';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
+import { applyMiddleware, createStore } from 'redux';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Component, reducer, actions import
+import App from 'components/App';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+
+// http://extension.remotedev.io/
+const reduxDevtoolsExtension =
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+
+render(
+  <Provider store={createStoreWithMiddleware(reduxDevtoolsExtension)}>
+    <App />
+  </Provider>,
+
+  document.getElementById('root')
+);
+
+// registerServiceWorker()
