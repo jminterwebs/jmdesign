@@ -1,0 +1,338 @@
+@import '_colors';
+@import '_typography';
+
+.styledized-list-headers {
+  margin: 1em 0;
+}
+/* GLOBAL RESETS */
+i {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+/* GLOBAL RESETs ENDS*/
+.App {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.primary {
+  background: $primary-color;
+  color: white;
+  &:hover {
+    background: $primary-hover-color;
+  }
+}
+
+.info {
+  background: $info-color;
+  color: white;
+  &:hover {
+    background: $info-hover-color;
+  }
+}
+
+.success {
+  background: $success-color;
+  color: white;
+  &:hover {
+    background: $success-hover-color;
+  }
+}
+
+.warning {
+  background: $warning-color;
+  color: white;
+  &:hover {
+    background: $warning-hover-color;
+  }
+}
+
+.danger {
+  background: $danger-color;
+  color: white;
+  &:hover {
+    background: $danger-hover-color;
+  }
+}
+
+.primary-outline {
+  border: 2px solid $primary-color;
+  background: white;
+  color: $primary-color;
+  &:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
+
+.info-outline {
+  border: 2px solid $info-color;
+  background: white;
+  color: $info-color;
+  &:hover {
+    background: $info-color;
+    color: white;
+  }
+}
+
+.success-outline {
+  border: 2px solid $success-color;
+  background: white;
+  color: $success-color;
+  &:hover {
+    background: $success-color;
+    color: white;
+  }
+}
+
+.warning-outline {
+  border: 2px solid $warning-color;
+  background: white;
+  color: $warning-color;
+  &:hover {
+    background: $warning-color;
+    color: white;
+  }
+}
+
+.danger-outline {
+  border: 2px solid $danger-color;
+  background: white;
+  color: $danger-color;
+  &:hover {
+    background: $danger-color;
+    color: white;
+  }
+}
+
+/** text styles  */
+
+/** colors **/
+
+.text-primary-color {
+  color: $primary-color;
+  &:hover {
+    color: $primary-hover-color;
+  }
+}
+
+.text-primary-dark-color {
+  color: $primary-dark-color;
+  &:hover {
+    color: $primary-hover-color;
+  }
+}
+
+.text-primary-light-color {
+  color: $primary-light-color;
+  &:hover {
+    color: $primary-hover-color;
+  }
+}
+
+.text-info-color {
+  color: $info-color;
+  &:hover {
+    color: $info-hover-color;
+  }
+}
+
+.text-info-dark-color {
+  color: $info-dark-color;
+  &:hover {
+    color: $info-hover-color;
+  }
+}
+
+.text-info-light-color {
+  color: $info-light-color;
+  &:hover {
+    color: $info-hover-color;
+  }
+}
+
+.text-success-color {
+  color: $success-color;
+  &:hover {
+    color: $success-hover-color;
+  }
+}
+
+.text-success-dark-color {
+  color: $success-dark-color;
+  &:hover {
+    color: $success-hover-color;
+  }
+}
+
+.text-success-light-color {
+  color: $success-light-color;
+  &:hover {
+    color: $success-hover-color;
+  }
+}
+
+.text-warning-color {
+  color: $warning-color;
+  &:hover {
+    color: $warning-hover-color;
+  }
+}
+
+.text-warning-dark-color {
+  color: $warning-dark-color;
+  &:hover {
+    color: $warning-hover-color;
+  }
+}
+
+.text-warning-light-color {
+  color: $warning-light-color;
+  &:hover {
+    color: $warning-hover-color;
+  }
+}
+
+.text-danger-color {
+  color: $danger-color;
+  &:hover {
+    color: $danger-hover-color;
+  }
+}
+
+.text-danger-dark-color {
+  color: $danger-dark-color;
+  &:hover {
+    color: $danger-hover-color;
+  }
+}
+
+.text-danger-light-color {
+  color: $danger-light-color;
+  &:hover {
+    color: $danger-hover-color;
+  }
+}
+
+.text-black-color {
+  color: #000;
+  &:hover {
+    color: #6a6a6a;
+  }
+}
+.text-white-color {
+  color: #fff;
+  &:hover {
+    color: #f0f0f0;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-heavy {
+  font-weight: $font-weight-heavy;
+}
+
+.text-medium {
+  font-weight: $font-weight-medium;
+}
+
+.text-normal {
+  font-weight: $font-weight-normal;
+}
+
+.text-light {
+  font-weight: $font-weight-light;
+}
+
+.text-extra-light {
+  font-weight: $font-weight-extra-light;
+}
+
+.heading-x-large {
+  font-family: $font-style;
+  font-size: $font-heading-x-large;
+  font-weight: $font-weight-heavy;
+  line-height: 1.25em;
+}
+
+.heading-large {
+  font-family: $font-style;
+  font-size: $font-heading-large;
+  font-weight: $font-weight-medium;
+  line-height: 1.25em;
+}
+
+.heading-medium {
+  font-family: $font-style;
+  font-size: $font-heading-medium;
+  font-weight: $font-weight-normal;
+  line-height: 1.25em;
+}
+
+.heading-small {
+  font-family: $font-style;
+  font-size: $font-heading-small;
+  font-weight: $font-weight-normal;
+  line-height: 1.25em;
+}
+
+.title-text {
+  font-family: $font-style;
+  font-size: $font-title;
+  font-weight: $font-weight-heavy;
+  line-height: 1.5em;
+}
+
+.label-text {
+  font-family: $font-style;
+  font-size: $font-label;
+  font-weight: $font-weight-heavy;
+  line-height: 1em;
+}
+
+.subLabel-text {
+  font-family: $font-style;
+  font-size: $font-subLabel;
+  font-weight: $font-weight-heavy;
+  color: $dark-light-color;
+  line-height: 1.5em;
+}
+
+.body-text {
+  font-family: $font-style;
+  font-size: $font-body;
+  font-weight: $font-weight-light;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0.75em 0;
+}
+
+.caption-text {
+  font-family: $font-style;
+  font-size: $font-caption;
+  font-weight: $font-weight-light;
+  line-height: 1.25em;
+  margin: 0.5em 0;
+}
+
+.default-font {
+  font-family: Montserrat, 'Helvetica Neue', Arial;
+}

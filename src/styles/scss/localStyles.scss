@@ -1,0 +1,9 @@
+.color-boxes {
+  display: flex;
+}
+.color-box {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 1em;
+  font-size: 1.5em;
+}
