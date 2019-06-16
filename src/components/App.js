@@ -12,6 +12,7 @@ import CalloutBanner from './calloutBanner/CalloutBanner';
 
 import '../styles/scss/global.scss';
 import '../styles/scss/localStyles.scss';
+import DefinitionTable from './definitionTable/DefinitionTable';
 
 export default function App() {
   return (
@@ -82,6 +83,29 @@ export default function App() {
         title="Call Out Banner"
         bodyText="This is the call out text"
         type="info"
+      />
+
+      <br />
+
+      <DefinitionTable
+        title="Definition Table"
+        data={[
+          {
+            term: 'Logistics',
+            definition:
+              'The management of products or other resources as they travel between a point of origin and a destination.'
+          },
+          {
+            term: 'Sole proprietorship',
+            definition:
+              'A business structure where a single individual both owns and runs the company.'
+          },
+          {
+            term: 'Discount code',
+            definition:
+              'A series of numbers and/or letters that an online shopper may enter at checkout to get a discount or special offer.'
+          }
+        ]}
       />
     </div>
   );

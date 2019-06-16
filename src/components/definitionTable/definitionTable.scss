@@ -1,0 +1,44 @@
+@import '../../styles/scss/colors.scss';
+
+.definition-row {
+  display: flex;
+  padding: 1.5em 0;
+  border-top: solid 1px $dark-light-color;
+  font-size: 0.85em;
+}
+
+.definition-row:first-child {
+  border: none;
+}
+
+.definition-table {
+  min-width: 750px;
+  max-width: fit-content;
+  background: $dark-light-color;
+}
+
+.definition-name {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 225px;
+  font-weight: 700;
+  padding-left: 1.75em;
+}
+.definition-defined {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding-right: 1.75em;
+}
+
+.definition-title {
+  text-transform: capitalize;
+  margin-bottom: 0.25em;
+}
+
+.definitions-table .body-text {
+  padding-top: 0;
+}
+
+.definition-row:hover {
+  background: $light-hover-color;
+}
