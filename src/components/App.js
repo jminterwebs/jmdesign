@@ -8,8 +8,10 @@ import Avatar from 'components/avatar/Avatar';
 import Card from 'components/card/Card';
 import Badge from 'components/badge/Badge';
 
-import 'styles/scss/global.scss';
-import 'styles/scss/localStyles.scss';
+import CalloutBanner from './calloutBanner/CalloutBanner';
+
+import '../styles/scss/global.scss';
+import '../styles/scss/localStyles.scss';
 
 export default function App() {
   return (
@@ -73,6 +75,14 @@ export default function App() {
       <Badge size="medium" label="badge" type="primary" />
 
       <Badge size="large" label="badge" type="primary" />
+
+      <br />
+
+      <CalloutBanner
+        title="Call Out Banner"
+        bodyText="This is the call out text"
+        type="info"
+      />
     </div>
   );
 }
