@@ -5,6 +5,8 @@ import Label from 'components/typography/Label';
 import Title from 'components/typography/Title';
 
 import Avatar from 'components/avatar/Avatar';
+import Card from 'components/card/Card';
+import Badge from 'components/badge/Badge';
 
 import 'styles/scss/global.scss';
 import 'styles/scss/localStyles.scss';
@@ -61,6 +63,16 @@ export default function App() {
       />
 
       <br />
+
+      <Card title={<Title text="hello there" />} outsideTitle></Card>
+
+      <br />
+
+      <Badge size="small" label="badge" type="primary" />
+
+      <Badge size="medium" label="badge" type="primary" />
+
+      <Badge size="large" label="badge" type="primary" />
     </div>
   );
 }

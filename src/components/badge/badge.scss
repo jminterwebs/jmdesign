@@ -1,0 +1,38 @@
+@import '../../styles/scss/colors.scss';
+
+.badge-input {
+  font-size: 0.8871em;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.35em;
+  margin: 10px 4px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 5px 5px 25px -8px #8a8a8a;
+  -moz-box-shadow: 5px 5px 25px -8px #8a8a8a;
+  box-shadow: 5px 5px 25px -8px #8a8a8a;
+}
+
+.badge-small {
+  font-size: 0.8em;
+  padding: 0px 10px;
+  height: 25px;
+  border-radius: 15px;
+}
+
+.badge-medium {
+  font-size: 0.9em;
+  padding: 0px 12px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.badge-large {
+  font-size: 1em;
+  padding: 0px 16px;
+  height: 35px;
+  border-radius: 25px;
+}
