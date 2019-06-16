@@ -1,0 +1,20 @@
+.card {
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(200, 200, 200, 1);
+  -moz-box-shadow: 5px 5px 15px 0px rgba(200, 200, 200, 1);
+  box-shadow: 5px 5px 15px 0px rgba(200, 200, 200, 1);
+  border-radius: 5px;
+  padding: 0.75em;
+  background: white;
+}
+.cardHeader {
+  font-family: Montserrat, 'Helvetica Neue', Arial;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.cardFooter {
+  font-family: Montserrat, 'Helvetica Neue', Arial;
+  font-weight: 300;
+  font-size: 1.25em;
+  text-align: right;
+}
