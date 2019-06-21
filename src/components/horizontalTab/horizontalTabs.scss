@@ -1,0 +1,31 @@
+@import '../../styles/scss/colors';
+@import '../../styles/scss/typography';
+
+.horizontal-tab-width {
+  padding: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active-tab {
+  border-bottom: 3px solid blue;
+}
+.tab-name {
+  text-align: center;
+  padding: 1em;
+  font-family: $font-style;
+  font-size: $font-label;
+  font-weight: $font-weight-heavy;
+  line-height: 1em;
+}
+
+.active-tab-body {
+  display: inline-block;
+  padding: 1em;
+}
+.nonactive-tab-body {
+  display: none;
+}
