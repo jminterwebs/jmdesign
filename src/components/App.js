@@ -9,6 +9,7 @@ import Card from 'components/card/Card';
 import Badge from 'components/badge/Badge';
 
 import CalloutBanner from './calloutBanner/CalloutBanner';
+import Breadcrumb from './breadcrumb/Breadcrumb';
 
 import '../styles/scss/global.scss';
 import '../styles/scss/localStyles.scss';
@@ -107,6 +108,20 @@ export default function App() {
           }
         ]}
       />
+
+      <br />
+
+      <Breadcrumb>
+        <Breadcrumb.Home name="Home" link="/" />
+        <Breadcrumb.History name="Products" link="/products" />
+        <Breadcrumb.Current name="Product" />
+      </Breadcrumb>
+
+      <br />
+
+      <br />
+
+      <br />
     </div>
   );
 }
