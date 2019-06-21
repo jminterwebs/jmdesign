@@ -2,6 +2,8 @@ import React from 'react';
 
 import Label from '../typography/Label';
 
+import './toggle.scss';
+
 export default function Toggle(props) {
   const { type, label, id } = props;
 
@@ -10,7 +12,9 @@ export default function Toggle(props) {
       <label className="switch" htmlFor={id}>
         <input id={id} type="checkbox" />
 
-        <span className={`slider round ${type}`}></span>
+        <span className={`slider round ${type}`}>
+          <span className="round before"></span>
+        </span>
       </label>
 
       <span className="toggleLabel">
