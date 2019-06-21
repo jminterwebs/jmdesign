@@ -1,0 +1,40 @@
+@import '../../styles/scss/colors.scss';
+@import '../../styles/scss/icons.scss';
+
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-nav li {
+  display: flex;
+}
+
+.breadcrumb-nav li a {
+  text-decoration: unset;
+  color: $black-dark;
+}
+
+.breadcrumb-nav li a:hover {
+  color: $black-subdued;
+}
+
+.current-crumb {
+  color: $black-subdued;
+}
+
+.history-crumb,
+.current-crumb {
+  display: flex;
+  align-items: center;
+}
+
+.history-crumb h2,
+.current-crumb h2 {
+  padding: 0 0.25em;
+}
+
+.history-crumb a {
+  text-decoration: unset;
+  color: $black-dark;
+}
