@@ -1,0 +1,186 @@
+@import '../../styles/scss/colors.scss';
+@import '../../styles/scss/icons.scss';
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 24px;
+  margin: 10px 5px 10px 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.before {
+  position: absolute;
+  content: '';
+  height: 34px;
+  width: 34px;
+  left: -2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+input:not(:checked) {
+  + .default {
+    background-color: $default-light-color;
+    .before {
+      color: $default-color;
+    }
+  }
+  + .primary {
+    background: $primary-light-color;
+    .before {
+      color: $primary-color;
+    }
+  }
+  + .info {
+    background: $info-light-color;
+    .before {
+      color: $info-color;
+    }
+  }
+  + .success {
+    background: $success-light-color;
+    .before {
+      color: $success-color;
+    }
+  }
+  + .warning {
+    background: $warning-light-color;
+    .before {
+      color: $warning-color;
+    }
+  }
+  + .danger {
+    background: $danger-light-color;
+    .before {
+      color: $danger-color;
+    }
+  }
+}
+
+input:checked {
+  + .default {
+    background-color: $default-color;
+    .before {
+      background: $default-dark-color;
+      -webkit-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -moz-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -webkit-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      transform: translateX(22px);
+    }
+  }
+  + .primary {
+    background: $primary-color;
+    .before {
+      background: $primary-dark-color;
+      -webkit-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -moz-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -webkit-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      transform: translateX(22px);
+    }
+  }
+  + .info {
+    background: $info-color;
+    .before {
+      background: $info-dark-color;
+      -webkit-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -moz-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -webkit-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      transform: translateX(22px);
+    }
+  }
+  + .success {
+    background: $success-color;
+    .before {
+      background: $primary-dark-color;
+      -webkit-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -moz-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -webkit-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      transform: translateX(22px);
+    }
+    + .toggleLabel {
+      color: $success-color;
+    }
+  }
+  + .warning {
+    background: $warning-color;
+    .before {
+      background: $warning-dark-color;
+      -webkit-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -moz-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -webkit-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      transform: translateX(22px);
+    }
+  }
+  + .danger {
+    background: $danger-color;
+    .before {
+      background: $danger-dark-color;
+      -webkit-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -moz-box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      box-shadow: 2px 5px 15px 2px rgba(148, 146, 148, 1);
+      -webkit-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      transform: translateX(22px);
+    }
+  }
+}
+
+/* Rounded sliders */
+.round {
+  border-radius: 34px;
+  display: flex;
+
+  align-items: center;
+}
+
+.round.before {
+  border-radius: 50%;
+}
+
+.toggleLabel {
+  font-family: Montserrat, 'Helvetica Neue', Arial;
+}
+
+.round .nc-icon {
+  text-align: center;
+}
