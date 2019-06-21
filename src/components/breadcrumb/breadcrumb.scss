@@ -1,5 +1,4 @@
 @import '../../styles/scss/colors.scss';
-@import '../../styles/scss/icons.scss';
 
 .breadcrumb-nav {
   display: flex;
@@ -12,15 +11,15 @@
 
 .breadcrumb-nav li a {
   text-decoration: unset;
-  color: $black-dark;
+  color: $dark-color;
 }
 
 .breadcrumb-nav li a:hover {
-  color: $black-subdued;
+  color: $dark-color;
 }
 
 .current-crumb {
-  color: $black-subdued;
+  color: $dark-light-color;
 }
 
 .history-crumb,
@@ -36,5 +35,9 @@
 
 .history-crumb a {
   text-decoration: unset;
-  color: $black-dark;
+  color: $dark-color;
+}
+
+.home-crumb {
+  padding-left: 0.5em;
 }
