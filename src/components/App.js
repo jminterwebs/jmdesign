@@ -11,6 +11,8 @@ import Badge from 'components/badge/Badge';
 import CalloutBanner from './calloutBanner/CalloutBanner';
 import Breadcrumb from './breadcrumb/Breadcrumb';
 
+import HorizontalTabs from './horizontalTab/HorizontalTabs';
+
 import '../styles/scss/global.scss';
 import '../styles/scss/localStyles.scss';
 import DefinitionTable from './definitionTable/DefinitionTable';
@@ -123,6 +125,18 @@ export default function App() {
       <Toggle type="info" label="toggle" id={1} />
 
       <br />
+      <HorizontalTabs
+        tabsData={[
+          { name: 'Tab 1', body: 'Testing Tab data text', active: true },
+          {
+            name: 'Tab 2',
+            body: <Label label="Label Text" />,
+            active: false
+          },
+          { name: 'Tab 3', body: 'Testing Tab data', active: false }
+        ]}
+        defaultTabIndex={0}
+      />
 
       <br />
     </div>
