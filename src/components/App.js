@@ -14,6 +14,7 @@ import Breadcrumb from './breadcrumb/Breadcrumb';
 import '../styles/scss/global.scss';
 import '../styles/scss/localStyles.scss';
 import DefinitionTable from './definitionTable/DefinitionTable';
+import Toggle from './toggle/Toggle';
 
 export default function App() {
   return (
@@ -118,6 +119,8 @@ export default function App() {
       </Breadcrumb>
 
       <br />
+
+      <Toggle type="info" label="toggle" id={1} />
 
       <br />
 
