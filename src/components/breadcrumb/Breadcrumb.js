@@ -2,6 +2,8 @@ import React from 'react';
 
 import Label from '../typography/Label';
 
+import './breadcrumb.scss';
+
 function Breadcrumb(props) {
   const { children } = props;
 
