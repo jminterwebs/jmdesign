@@ -18,6 +18,10 @@ h3 {
 li {
   list-style: none;
 }
+
+:focus {
+  outline: none;
+}
 /* GLOBAL RESETs ENDS*/
 .App {
   width: 80%;
