@@ -24,20 +24,18 @@ export default function HorizontalTabs(props) {
       <div className="tabs">
         {tabsData.map((tab, index) => {
           return (
-            <li
+            <div
               key={tab.name}
               style={styles}
+              tabIndex={index}
+              role="button"
+              onClick={e => handleClick(e)}
+              onKeyPress={e => handleClick(e)}
               className={`tab-name tab-${index} ${
                 activeTab === index ? 'active-tab' : 'nonactive-tab'
               }`}>
-              <div
-                tabIndex={index}
-                role="button"
-                onClick={e => handleClick(e)}
-                onKeyPress={e => handleClick(e)}>
-                {tab.name}
-              </div>
-            </li>
+              <div tabIndex={index}>{tab.name}</div>
+            </div>
           );
         })}
       </div>
