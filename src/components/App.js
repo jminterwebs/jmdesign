@@ -64,9 +64,9 @@ export default function App() {
 
       <Avatar
         imageSrc="https://picsum.photos/300"
-        label="John Verdone"
+        label="JMInterwebs"
         subLabel="Web Developer"
-        initials="JV"
+        initials="JM"
       />
 
       <br />
