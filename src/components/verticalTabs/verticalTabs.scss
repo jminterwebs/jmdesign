@@ -1,0 +1,36 @@
+@import '../../styles/scss/colors';
+@import '../../styles/scss/typography';
+
+.vertical-tab-width {
+  padding: 0;
+  margin-bottom: 250px;
+  display: flex;
+  flex-flow: row;
+}
+
+.vertical-tabs {
+  display: flex;
+  width: 25%;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.vertical-active-tab {
+  border-bottom: 3px solid blue;
+}
+.vertical-tab-name {
+  text-align: center;
+  padding: 1em;
+  font-family: $font-style;
+  font-size: $font-label;
+  font-weight: $font-weight-heavy;
+  line-height: 1em;
+}
+
+.vertical-active-tab-body {
+  display: inline-block;
+  padding: 1em;
+}
+.vertical-nonactive-tab-body {
+  display: none;
+}

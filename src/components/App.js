@@ -17,6 +17,7 @@ import '../styles/scss/global.scss';
 import '../styles/scss/localStyles.scss';
 import DefinitionTable from './definitionTable/DefinitionTable';
 import Toggle from './toggle/Toggle';
+import VerticalTabs from './verticalTabs/VerticalTabs';
 
 export default function App() {
   return (
@@ -139,6 +140,18 @@ export default function App() {
       />
 
       <br />
+      <VerticalTabs
+        tabsData={[
+          { name: 'Tab 1', body: 'Testing Tab data text', active: true },
+          {
+            name: 'Tab 2',
+            body: <Label label="Label Text" />,
+            active: false
+          },
+          { name: 'Tab 3', body: 'Testing Tab data', active: false }
+        ]}
+        defaultTabIndex={0}
+      />
     </div>
   );
 }
