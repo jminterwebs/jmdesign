@@ -7,17 +7,17 @@ import Title from 'components/typography/Title';
 import Avatar from 'components/avatar/Avatar';
 import Card from 'components/card/Card';
 import Badge from 'components/badge/Badge';
-
+import List from 'components/list/List';
 import CalloutBanner from './calloutBanner/CalloutBanner';
 import Breadcrumb from './breadcrumb/Breadcrumb';
 
 import HorizontalTabs from './horizontalTab/HorizontalTabs';
-
-import '../styles/scss/global.scss';
-import '../styles/scss/localStyles.scss';
 import DefinitionTable from './definitionTable/DefinitionTable';
 import Toggle from './toggle/Toggle';
 import VerticalTabs from './verticalTabs/VerticalTabs';
+
+import '../styles/scss/global.scss';
+import '../styles/scss/localStyles.scss';
 
 export default function App() {
   return (
@@ -152,6 +152,12 @@ export default function App() {
         ]}
         defaultTabIndex={0}
       />
+
+      <br />
+
+      <List numbered="number" list={['one', 'two', 'Three', 'Bills', 'Bulls']}>
+        <List.LineItem> Testing</List.LineItem>
+      </List>
     </div>
   );
 }
