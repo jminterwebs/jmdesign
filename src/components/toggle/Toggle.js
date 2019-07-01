@@ -13,7 +13,7 @@ export default function Toggle(props) {
         <input id={id} type="checkbox" />
 
         <span className={`slider round ${type}`}>
-          <span className="round before"></span>
+          <span className="round before" />
         </span>
       </label>
 
