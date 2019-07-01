@@ -72,7 +72,7 @@ export default function App() {
 
       <br />
 
-      <Card title={<Title text="hello there" />} outsideTitle></Card>
+      <Card title={<Title text="hello there" />} outsideTitle />
 
       <br />
 
