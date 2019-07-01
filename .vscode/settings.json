@@ -4,5 +4,7 @@
   "prettier.eslintIntegration": true,
   "prettier.bracketSpacing": true,
   "prettier.arrowParens": "avoid",
-  "prettier.jsxBracketSameLine": true
+  "prettier.jsxBracketSameLine": true,
+  "editor.fontSize": 14,
+  "window.zoomLevel": 2.5
 }
