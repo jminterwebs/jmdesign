@@ -1,8 +1,3 @@
-Compontents
+Design System for React. Inspired by a mix of Polaris, Bootstratp and Material.
 
-- Typography
-- Card
-- Button
-- Switch
-- Toggle
-- Avatar
+Stroy Book page (here)[https://jmdesign.netlify.com/]
