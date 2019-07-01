@@ -36,7 +36,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook-deploy": "build-storybook -c .storybook -o .out",
-    "start-js": "react-scripts start"
+    "start-js": "react-scripts start",
+    "build-storybook": "build-storybook -c .storybook"
   },
   "husky": {
     "hooks": {
