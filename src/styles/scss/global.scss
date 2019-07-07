@@ -24,11 +24,35 @@ h3 {
   margin: 2em auto;
 }
 
+.dark {
+  background: $dark-color;
+  color: white !important;
+  &:hover {
+    background: $dark-hover-color;
+  }
+}
+
+.light {
+  background: $light-color;
+  color: white;
+  &:hover {
+    background: $light-hover-color;
+  }
+}
+
 .primary {
   background: $primary-color;
   color: white;
   &:hover {
     background: $primary-hover-color;
+  }
+}
+
+.secondary {
+  background: $secondary-color;
+  color: white;
+  &:hover {
+    background: $secondary-hover-color;
   }
 }
 
@@ -64,12 +88,42 @@ h3 {
   }
 }
 
+.dark-outline {
+  border: 2px solid $dark-color;
+  background: white;
+  color: $dark-color;
+  &:hover {
+    background: $dark-color;
+    color: white;
+  }
+}
+
+.light-outline {
+  border: 2px solid $light-color;
+  background: white;
+  color: $light-color;
+  &:hover {
+    background: $light-color;
+    color: white;
+  }
+}
+
 .primary-outline {
   border: 2px solid $primary-color;
   background: white;
   color: $primary-color;
   &:hover {
     background: $primary-color;
+    color: white;
+  }
+}
+
+.secondary-outline {
+  border: 2px solid $secondary-color;
+  background: white;
+  color: $secondary-color;
+  &:hover {
+    background: $secondary-color;
     color: white;
   }
 }
