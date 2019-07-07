@@ -7,8 +7,8 @@ import Title from '../typography/Title';
 export default function Card(props) {
   const { title, footer, children, customClass, outsideTitle } = props;
 
-  const outterTitle = outsideTitle ? <Title title={title} /> : '';
-  const innerTitle = outsideTitle ? '' : <Title title={title} />;
+  const outterTitle = outsideTitle ? <Title text={title} /> : '';
+  const innerTitle = outsideTitle ? '' : <Title text={title} />;
   const style = customClass || '';
 
   return (
