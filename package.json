@@ -73,7 +73,6 @@
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
     "babel-cli": "^6.26.0",
-    "babel-loader": "^8.0.5",
     "babel-core": "^6.26.3",
     "babel-plugin-styled-components": "^1.10.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
