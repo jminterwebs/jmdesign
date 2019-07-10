@@ -3,7 +3,7 @@ import React from 'react';
 // Storybook
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import { withKnobs, text, array, boolean } from '@storybook/addon-knobs';
+import { withKnobs, text, object, boolean } from '@storybook/addon-knobs';
 
 // Story Book Globals
 import DefinitionTable from 'components/definitionTable/DefinitionTable';
@@ -46,7 +46,7 @@ definitionTable
     ];
 
     const title = text('Title', 'Table Title');
-    const data = array('Definitions', definitions);
+    const data = object('Definitions', definitions);
     const outsideTitle = boolean('Outside Title', false);
 
     return (
