@@ -1,14 +1,13 @@
 import React from 'react';
 
 import BodyText from '../typography/BodyText';
-import Title from '../typography/Title';
 import Card from '../card/Card';
 import Label from '../typography/Label';
 
 import './definitionTable.scss';
 
 export default function DefinitionTable(props) {
-  const { title, data } = props;
+  const { title, data, outsideTitle } = props;
 
   const definitionList = data.map(list => {
     return (
@@ -24,8 +23,7 @@ export default function DefinitionTable(props) {
   });
 
   return (
-    <Card customClass="reportsCard">
-      <Title text={title} />
+    <Card customClass="reportsCard" title={title} outsideTitle={outsideTitle}>
       <div className="definitions-table">{definitionList}</div>
     </Card>
   );
