@@ -15,18 +15,17 @@ function List(props) {
       })
     : null;
 
-  const ordered =
-    numbered === 'number' ? (
-      <ol>
-        {listItems}
-        {children}
-      </ol>
-    ) : (
-      <ul>
-        {listItems}
-        {children}
-      </ul>
-    );
+  const ordered = numbered ? (
+    <ol>
+      {listItems}
+      {children}
+    </ol>
+  ) : (
+    <ul>
+      {listItems}
+      {children}
+    </ul>
+  );
   return <React.Fragment>{ordered}</React.Fragment>;
 }
 
