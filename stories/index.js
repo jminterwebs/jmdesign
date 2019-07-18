@@ -6,3 +6,4 @@ import './card/card';
 import './definitionTable/definitionTable';
 import './horizontalTab/horizontalTab';
 import './image/image';
+import './list/list';
