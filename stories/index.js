@@ -9,3 +9,4 @@ import './image/image';
 import './list/list';
 import './toggle/toggle';
 import './typography/typography';
+import './verticalTabs/verticalTabs';
