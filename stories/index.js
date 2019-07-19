@@ -7,3 +7,5 @@ import './definitionTable/definitionTable';
 import './horizontalTab/horizontalTab';
 import './image/image';
 import './list/list';
+import './toggle/toggle';
+import './typography/typography';
