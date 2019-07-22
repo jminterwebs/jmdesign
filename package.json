@@ -1,6 +1,6 @@
 {
   "name": "jmdesign",
-  "version": "0.2.7",
+  "version": "0.2.13",
   "private": false,
   "main": "dist/components/index.js",
   "module": "dist/components/index.js",

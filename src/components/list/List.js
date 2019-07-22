@@ -2,13 +2,17 @@ import React from 'react';
 
 import Label from '../typography/Label';
 
+import './list.scss';
+
 function List(props) {
-  const { numbered, list, children } = props;
+  const { numbered, list, children, unstyled } = props;
+
+  const styledList = unstyled ? 'unbulleted' : '';
 
   const listItems = list
     ? list.map(listItem => {
         return (
-          <li key={listItem} className="listItem">
+          <li key={listItem} className={`listItem ${styledList}`}>
             <Label label={listItem} />
           </li>
         );
@@ -16,12 +20,12 @@ function List(props) {
     : null;
 
   const ordered = numbered ? (
-    <ol>
+    <ol className="listables">
       {listItems}
       {children}
     </ol>
   ) : (
-    <ul>
+    <ul className={`listables ${styledList}`}>
       {listItems}
       {children}
     </ul>

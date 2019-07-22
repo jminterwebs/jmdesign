@@ -20,11 +20,13 @@
   font-size: $font-label;
   font-weight: $font-weight-heavy;
   line-height: 1em;
+  cursor: pointer;
 }
 
 .active-tab-body {
   display: inline-block;
-  padding: 1em;
+
+  width: 100%;
 }
 .nonactive-tab-body {
   display: none;
