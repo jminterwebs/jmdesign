@@ -1,6 +1,6 @@
 {
   "name": "jmdesign",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": false,
   "main": "dist/components/index.js",
   "module": "dist/components/index.js",
@@ -31,7 +31,7 @@
     "watch-css": "npm run build-css && node-sass --include-path ./src --include-path ./node_modules src/ -o src/styles/css --watch --recursive",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    "publish:npm": "NODE_ENV=production && rm -rf dist && mkdir dist  && cp -a src/styles/. dist/styles && npx babel src/components --out-dir dist/components --copy-files",
+    "prepublish": "NODE_ENV=production && rm -rf dist && mkdir dist  && cp -a src/styles/. dist/styles && npx babel src/components --out-dir dist/components --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9001 -c .storybook",
