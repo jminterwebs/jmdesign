@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Global Style
-import 'styles/scss/global.scss';
+import '../../styles/scss/global.scss';
 
 export default function BodyText(props) {
   const { children, align } = props;
