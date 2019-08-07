@@ -16,8 +16,7 @@ avatar
     withInfo({
       header: true,
       inline: true,
-      text:
-        "An Avatar components display a small image. Avatar's should be used to display user information and in product lists. Additional information can also be added by passing strings with the name and byline props. Ideally an Avatar component should be used with the card component",
+      text: '',
       styles: {
         header: {
           h1: {
