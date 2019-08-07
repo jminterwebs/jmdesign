@@ -31,14 +31,13 @@ avatar
       'imageSrc',
       'https://media.istockphoto.com/photos/lego-batman-picture-id517124944?k=6&m=517124944&s=612x612&w=0&h=eICOAC0cHWaqL6vKM4y8BvOcAvn3OpZ5_-sst48C1Gw='
     );
-    const size = text('size', 'medium');
+
     const label = text('label', 'Batman');
     const subLabel = text('subLabel', 'Caped Crusader');
     const initials = text('initials', 'BW');
 
     return (
       <Avatar
-        size={size}
         label={label}
         subLabel={subLabel}
         initials={initials}
