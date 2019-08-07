@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import BodyText from '../typography/BodyText';
 import Card from '../card/Card';
@@ -28,3 +29,17 @@ export default function DefinitionTable(props) {
     </Card>
   );
 }
+
+DefinitionTable.propTypes = {
+  title: PropTypes.string,
+  outsideTitle: PropTypes.bool,
+  data: PropTypes.shape({
+    term: PropTypes.string.isRequired,
+    definition: PropTypes.string.isRequired
+  }).isRequired
+};
+
+DefinitionTable.defaultProps = {
+  title: '',
+  outsideTitle: false
+};

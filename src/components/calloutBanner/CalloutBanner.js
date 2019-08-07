@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Title from '../typography/Title';
 import BodyText from '../typography/BodyText';
@@ -19,3 +20,24 @@ export default function CalloutBanner(props) {
     </div>
   );
 }
+
+CalloutBanner.propTypes = {
+  title: PropTypes.string.isRequired,
+  bodyText: PropTypes.string.isRequired,
+  type: PropTypes.oneOf([
+    'secondary',
+    'success',
+    'primary',
+    'info',
+    'warning',
+    'danger',
+    'dark',
+    'light'
+  ]),
+  footer: PropTypes.node
+};
+
+CalloutBanner.defaultProps = {
+  type: 'info',
+  footer: ''
+};

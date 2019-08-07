@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Label from '../typography/Label';
 
@@ -48,3 +49,21 @@ Breadcrumb.History = PreviousLink;
 Breadcrumb.Current = Current;
 
 export default Breadcrumb;
+
+Breadcrumb.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+Home.propTypes = {
+  name: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
+};
+
+PreviousLink.propTypes = {
+  name: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
+};
+
+Current.protoTypes = {
+  name: PropTypes.string.isRequired
+};

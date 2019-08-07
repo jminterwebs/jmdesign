@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import Card from '../card/Card';
 
@@ -55,3 +56,21 @@ export default function HorizontalTabs(props) {
     </Card>
   );
 }
+
+HorizontalTabs.propTypes = {
+  defaultTabIndex: PropTypes.number,
+  tabsData: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    body: PropTypes.node,
+    active: PropTypes.bool.isRequired
+  })
+};
+
+HorizontalTabs.defaultProps = {
+  defaultTabIndex: 1,
+  tabsData: {
+    name: '',
+    body: '',
+    active: false
+  }
+};

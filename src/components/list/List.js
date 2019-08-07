@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Label from '../typography/Label';
 
@@ -44,3 +45,17 @@ function LineItem(props) {
 List.LineItem = LineItem;
 
 export default List;
+
+List.propTypes = {
+  numbered: PropTypes.bool,
+  list: PropTypes.arrayOf(PropTypes.string).isRequired,
+
+  children: PropTypes.node,
+  unstyled: PropTypes.bool
+};
+
+List.defaultProps = {
+  numbered: false,
+  children: '',
+  unstyled: true
+};

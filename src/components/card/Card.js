@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './card.scss';
 
@@ -22,3 +23,18 @@ export default function Card(props) {
     </div>
   );
 }
+
+Card.propTypes = {
+  title: PropTypes.string,
+  footer: PropTypes.node,
+  children: PropTypes.node.isRequired,
+  customClass: PropTypes.string,
+  outsideTitle: PropTypes.bool
+};
+
+Card.defaultProps = {
+  title: '',
+  footer: '',
+  customClass: '',
+  outsideTitle: false
+};

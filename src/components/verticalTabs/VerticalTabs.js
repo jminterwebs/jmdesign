@@ -1,5 +1,6 @@
 // Core React
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 // Local Components
 import Card from '../card/Card';
@@ -55,3 +56,21 @@ export default function VerticalTabs(props) {
     </Card>
   );
 }
+
+VerticalTabs.propTypes = {
+  defaultTabIndex: PropTypes.number,
+  tabsData: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    body: PropTypes.node,
+    active: PropTypes.bool.isRequired
+  })
+};
+
+VerticalTabs.defaultProps = {
+  defaultTabIndex: 1,
+  tabsData: {
+    name: '',
+    body: '',
+    active: false
+  }
+};

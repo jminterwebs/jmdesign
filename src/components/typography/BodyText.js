@@ -21,7 +21,7 @@ export default function BodyText(props) {
 
 BodyText.propTypes = {
   /** Body Text */
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   /** Alignment of body text */
   align: PropTypes.oneOf([
     'left',

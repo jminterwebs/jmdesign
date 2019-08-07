@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Label from '../typography/Label';
 
@@ -23,3 +24,22 @@ export default function Toggle(props) {
     </div>
   );
 }
+
+Toggle.propTypes = {
+  type: PropTypes.oneOf([
+    'secondary',
+    'success',
+    'primary',
+    'info',
+    'warning',
+    'danger',
+    'dark',
+    'light'
+  ]),
+  label: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired
+};
+
+Toggle.defaultProps = {
+  type: 'info'
+};
