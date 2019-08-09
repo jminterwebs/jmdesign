@@ -57,5 +57,5 @@ List.propTypes = {
 List.defaultProps = {
   numbered: false,
   children: '',
-  unstyled: true
+  unstyled: false
 };
