@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Label from '../typography/Label';
-
 import './list.scss';
 
 function List(props) {
@@ -14,7 +12,7 @@ function List(props) {
     ? list.map(listItem => {
         return (
           <li key={listItem} className={`listItem ${styledList}`}>
-            <Label label={listItem} />
+            {listItem}
           </li>
         );
       })
