@@ -15,6 +15,7 @@ import { default as Label } from './typography/Label';
 import { default as SubLabel } from './typography/SubLabel';
 import { default as Title } from './typography/Title';
 import { default as VerticalTabs } from './verticalTabs/VerticalTabs';
+import { default as Wrapper } from './wrapper/Wrapper';
 
 export {
   Avatar,
@@ -33,5 +34,6 @@ export {
   Label,
   SubLabel,
   Title,
-  VerticalTabs
+  VerticalTabs,
+  Wrapper
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Wrapper from 'components/wrapper/Wrapper';
 import Heading from 'components/typography/Heading';
 import Label from 'components/typography/Label';
 import Title from 'components/typography/Title';
@@ -155,9 +156,11 @@ export default function App() {
 
       <br />
 
-      <List list={['one', 'two', 'Three', 'Bills', 'Bulls']}>
-        <List.LineItem> Testing</List.LineItem>
-      </List>
+      <Wrapper>
+        <List list={['one', 'two', 'Three', 'Bills', 'Bulls']}>
+          <List.LineItem> Testing</List.LineItem>
+        </List>
+      </Wrapper>
     </div>
   );
 }
