@@ -11,7 +11,7 @@ function List(props) {
   const listItems = list
     ? list.map(listItem => {
         return (
-          <li key={listItem} className={`listItem ${styledList}`}>
+          <li key={listItem} className={`listItem ${styledList} list-style`}>
             {listItem}
           </li>
         );

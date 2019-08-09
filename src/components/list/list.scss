@@ -1,4 +1,5 @@
 @import '../../styles/scss/colors.scss';
+@import '../../styles/scss/typography.scss';
 
 .list {
   padding: 0.15em 0;
@@ -7,4 +8,10 @@
 .unbulleted {
   list-style: none;
   padding-left: 0;
+}
+
+.list-style {
+  font-family: $font-style;
+  font-size: $font-label;
+  font-weight: $font-weight-medium;
 }
