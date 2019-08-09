@@ -155,7 +155,7 @@ export default function App() {
 
       <br />
 
-      <List list={['one', 'two', 'Three', 'Bills', 'Bulls']}>
+      <List list={['one', 'two', 'Three', 'Bills', 'Bulls']} unstyled>
         <List.LineItem> Testing</List.LineItem>
       </List>
     </div>
