@@ -1,9 +1,10 @@
 Design System for React. Inspired by a mix of Polaris, Bootstratp and Material.
 
-Stroy Book page [here](https://jmdesign.netlify.com/)
+StoryBook page [here](https://jmdesign.netlify.com/)
 
 #####TODO:
 
+This package is still very much a work in progress. Updates coming almost daily. Version 1.0 should be out soon!
 ##Components to be added to Storybook
 
 1. Breadcrumb
