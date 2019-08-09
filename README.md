@@ -1,6 +1,6 @@
 Design System for React. Inspired by a mix of Polaris, Bootstratp and Material.
 
-StoryBook page [here](https://jmdesign.netlify.com/)
+Storybook page [here](https://jmdesign.netlify.com/)
 
 #####TODO:
 
