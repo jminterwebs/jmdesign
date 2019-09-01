@@ -6,10 +6,11 @@ import PropTypes from 'prop-types';
 import '../../styles/scss/global.scss';
 
 export default function BodyText(props) {
-  const { children, align } = props;
+  const { children, align, minHeight } = props;
 
   const styles = {
-    textAlign: align
+    textAlign: align,
+    minHeight
   };
 
   return (

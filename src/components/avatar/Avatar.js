@@ -14,7 +14,7 @@ export default function Avatar(props) {
   const avatarPicture = imageSrc ? (
     <Thumbnail imageSrc={imageSrc} rounded size="small" />
   ) : (
-    <Label label={initials} />
+    <Label label={initials} customClass="avatar-initals" />
   );
 
   return (

@@ -72,6 +72,11 @@ export default function App() {
       />
 
       <br />
+      <br />
+
+      <Avatar label="JMInterwebs" subLabel="Web Developer" initials="JM" />
+
+      <br />
 
       <Card title="Card title" outsideTitle footer={<p> This is a footer</p>} />
 

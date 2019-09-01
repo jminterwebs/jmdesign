@@ -6,17 +6,18 @@ import PropTypes from 'prop-types';
 import '../../styles/scss/global.scss';
 
 export default function Label(props) {
-  const { label, weight, displayStyle, labelColor } = props;
+  const { label, weight, displayStyle, labelColor, customClass } = props;
 
   const styles = {
     'font-weight': weight,
-    display: displayStyle
+    display: displayStyle,
+    textAlign: 'left'
   };
 
   const textColor = labelColor ? ` text-${labelColor}-color` : '';
 
   return (
-    <h2 className={`label-text${textColor}`} style={styles}>
+    <h2 className={`label-text${textColor} ${customClass}`} style={styles}>
       {label}
     </h2>
   );
