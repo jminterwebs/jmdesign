@@ -10,8 +10,7 @@ export default function Label(props) {
 
   const styles = {
     'font-weight': weight,
-    display: displayStyle,
-    textAlign: 'left'
+    display: displayStyle
   };
 
   const textColor = labelColor ? ` text-${labelColor}-color` : '';

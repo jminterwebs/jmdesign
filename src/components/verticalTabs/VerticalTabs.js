@@ -9,7 +9,7 @@ import Card from '../card/Card';
 import './verticalTabs.scss';
 
 export default function VerticalTabs(props) {
-  const { tabsData, defaultTabIndex } = props;
+  const { tabsData, defaultTabIndex, title } = props;
 
   const [activeTab, setActiveTab] = useState(defaultTabIndex);
 
@@ -18,7 +18,7 @@ export default function VerticalTabs(props) {
   };
 
   return (
-    <Card customClass="vertical-tab-width">
+    <Card customClass="vertical-tab-width" title={title}>
       <div className="vertical-tabs">
         {tabsData.map((tab, index) => {
           return (
