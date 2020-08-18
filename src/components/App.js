@@ -5,6 +5,7 @@ import Heading from 'components/typography/Heading';
 import Label from 'components/typography/Label';
 import Title from 'components/typography/Title';
 
+import Button from 'components/button/Button';
 import Avatar from 'components/avatar/Avatar';
 import Card from 'components/card/Card';
 import Badge from 'components/badge/Badge';
@@ -45,6 +46,20 @@ export default function App() {
           <Label text="default" labelColor="white" />
         </div>
       </div>
+      <br />
+
+      <Button size="small" label="badge" type="primary" text="Hello" />
+
+      <Button
+        size="medium"
+        label="badge"
+        type="button"
+        buttonType="submit"
+        text="Hello"
+      />
+
+      <Button size="large" label="badge" type="primary" text="Hello" />
+
       <br />
       <Heading text="Typography" size="x-large" />
       <br />
