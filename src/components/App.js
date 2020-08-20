@@ -6,6 +6,7 @@ import Label from 'components/typography/Label';
 import Title from 'components/typography/Title';
 
 import Button from 'components/button/Button';
+import Input from 'components/form/Input';
 import Avatar from 'components/avatar/Avatar';
 import Card from 'components/card/Card';
 import Badge from 'components/badge/Badge';
@@ -22,8 +23,12 @@ import '../styles/scss/global.scss';
 import '../styles/scss/localStyles.scss';
 
 export default function App() {
+  const styles = {
+    marginLeft: '25px'
+  };
+
   return (
-    <div className="App">
+    <div className="App" style={styles}>
       <Heading text="Color Boxes" size="x-large" />
       <div className="color-boxes">
         <div className="color-box primary">
@@ -59,8 +64,27 @@ export default function App() {
       />
 
       <Button size="large" label="badge" type="primary" text="Hello" />
-
       <br />
+      <br />
+      <Input size="small" placeholder="Testing" type="info" />
+      <br />
+      <br />
+      <Input size="medium" placeholder="Testing" type="primary" />
+      <br />
+      <br />
+      <Input size="large" placeholder="Testing" type="secondary" />
+      <br />
+      <br />
+      <Input size="large" placeholder="Testing" type="warning" />
+      <br />
+      <br />
+      <Input size="large" placeholder="Testing" type="danger" />
+      <br />
+      <br />
+      <Input size="large" placeholder="Testing" type="success" />
+      <br />
+      <br />
+
       <Heading text="Typography" size="x-large" />
       <br />
       <Heading text="Headings" size="medium" />

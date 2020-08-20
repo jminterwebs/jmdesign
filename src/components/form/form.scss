@@ -1,0 +1,43 @@
+@import '../../styles/scss/colors.scss';
+
+.input-style {
+  border-radius: 2px;
+  padding: 0.3em;
+  font-weight: 700;
+}
+
+.input-small {
+  font-size: 0.8em;
+}
+
+.input-medium {
+  font-size: 0.9em;
+}
+.input-large {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.input-info {
+  border: 2px solid $info-color;
+}
+
+.input-primary {
+  border: 2px solid $primary-color;
+}
+
+.input-secondary {
+  border: 2px solid $secondary-color;
+}
+
+.input-warning {
+  border: 2px solid $warning-color;
+}
+
+.input-danger {
+  border: 2px solid $danger-color;
+}
+
+.input-success {
+  border: 2px solid $success-color;
+}
