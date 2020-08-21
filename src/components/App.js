@@ -8,6 +8,7 @@ import Title from 'components/typography/Title';
 import Button from 'components/button/Button';
 import Input from 'components/form/Input';
 import Checkbox from 'components/form/Checkbox';
+import RadioGroup from 'components/form/RadioGroup';
 import Avatar from 'components/avatar/Avatar';
 import Card from 'components/card/Card';
 import Badge from 'components/badge/Badge';
@@ -124,6 +125,17 @@ export default function App() {
         size="small"
       />
 
+      <br />
+      <br />
+
+      <RadioGroup
+        name="test-group"
+        values={[
+          { value: 'one', text: 'testing', subText: 'tester', type: 'info' },
+          { value: 'two', text: 'hello', subText: 'tester', type: 'info' },
+          { value: 'three', text: 'bye', subText: 'tester' }
+        ]}
+      />
       <br />
       <br />
       <Heading text="Typography" size="x-large" />
