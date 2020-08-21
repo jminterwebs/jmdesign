@@ -13,10 +13,11 @@ export default function Label(props) {
     display: displayStyle
   };
 
+  const addedClass = customClass || '';
   const textColor = labelColor ? ` text-${labelColor}-color` : '';
 
   return (
-    <h2 className={`label-text${textColor} ${customClass}`} style={styles}>
+    <h2 className={`label-text${textColor} ${addedClass}`} style={styles}>
       {label}
     </h2>
   );

@@ -1,5 +1,6 @@
 @import '../../styles/scss/colors.scss';
 
+/* Text Input Styles */
 .input-style {
   border-radius: 2px;
   padding: 0.3em;
@@ -40,4 +41,129 @@
 
 .input-success {
   border: 2px solid $success-color;
+}
+
+/* Checkbox Styles */
+
+.checkbox-style {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  /* create custom checkbox appearance */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1.5px solid #bbbbbb;
+  border-radius: 6px;
+  background-color: #e7e6e7;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  &.checkbox-small {
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+  }
+  &.checkbox-medium {
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+  }
+  &.checkbox-large {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+  }
+  &.checkbox-info {
+    border-color: $info-color;
+  }
+
+  &.checkbox-primary {
+    border-color: $primary-color;
+  }
+
+  &.checkbox-secondary {
+    border-color: $secondary-color;
+  }
+
+  &.checkbox-warning {
+    border-color: $warning-color;
+  }
+
+  &.checkbox-danger {
+    border-color: $danger-color;
+  }
+
+  &.checkbox-success {
+    border-color: $success-color;
+  }
+
+  &:hover {
+    background-clip: content-box;
+
+    border-radius: 6px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  &.checkbox-info:hover {
+    background-color: $info-light-color;
+    border-color: $info-light-color;
+  }
+
+  &.checkbox-primary:hover {
+    background-color: $primary-light-color;
+    border-color: $primary-light-color;
+  }
+
+  &.checkbox-secondary:hover {
+    background-color: $secondary-light-color;
+    border-color: $secondary-light-color;
+  }
+
+  &.checkbox-warning:hover {
+    background-color: $warning-light-color;
+    border-color: $warning-light-color;
+  }
+
+  &.checkbox-danger:hover {
+    background-color: $danger-light-color;
+    border-color: $danger-light-color;
+  }
+
+  &.checkbox-success:hover {
+    background-color: $success-light-color;
+    border-color: $success-light-color;
+  }
+
+  &.checkbox-info:checked {
+    background-color: $info-color;
+  }
+
+  &.checkbox-primary:checked {
+    background-color: $primary-color;
+  }
+
+  &.checkbox-secondary:checked {
+    background-color: $secondary-color;
+  }
+
+  &.checkbox-warning:checked {
+    background-color: $warning-color;
+  }
+
+  &.checkbox-danger:checked {
+    background-color: $danger-color;
+  }
+
+  &.checkbox-success:checked {
+    background-color: $success-color;
+  }
 }

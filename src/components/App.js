@@ -7,6 +7,7 @@ import Title from 'components/typography/Title';
 
 import Button from 'components/button/Button';
 import Input from 'components/form/Input';
+import Checkbox from 'components/form/Checkbox';
 import Avatar from 'components/avatar/Avatar';
 import Card from 'components/card/Card';
 import Badge from 'components/badge/Badge';
@@ -52,9 +53,7 @@ export default function App() {
         </div>
       </div>
       <br />
-
       <Button size="small" label="badge" type="primary" text="Hello" />
-
       <Button
         size="medium"
         label="badge"
@@ -62,29 +61,71 @@ export default function App() {
         buttonType="submit"
         text="Hello"
       />
-
       <Button size="large" label="badge" type="primary" text="Hello" />
-      <br />
-      <br />
       <Input size="small" placeholder="Testing" type="info" />
-      <br />
-      <br />
       <Input size="medium" placeholder="Testing" type="primary" />
-      <br />
-      <br />
       <Input size="large" placeholder="Testing" type="secondary" />
-      <br />
-      <br />
       <Input size="large" placeholder="Testing" type="warning" />
-      <br />
-      <br />
       <Input size="large" placeholder="Testing" type="danger" />
-      <br />
-      <br />
       <Input size="large" placeholder="Testing" type="success" />
       <br />
       <br />
+      <Checkbox
+        name="test"
+        value="testing"
+        formId="tester"
+        label="test"
+        type="info"
+        size="medium"
+      />
 
+      <Checkbox
+        name="test"
+        value="testing"
+        formId="tester"
+        label="test"
+        type="primary"
+        size="large"
+      />
+
+      <Checkbox
+        name="test"
+        value="testing"
+        formId="tester"
+        label="test"
+        type="secondary"
+        size="small"
+      />
+
+      <Checkbox
+        name="test"
+        value="testing"
+        formId="tester"
+        label="test"
+        type="warning"
+        size="small"
+      />
+
+      <Checkbox
+        name="test"
+        value="testing"
+        formId="tester"
+        label="test"
+        type="danger"
+        size="small"
+      />
+
+      <Checkbox
+        name="test"
+        value="testing"
+        formId="tester"
+        label="test"
+        type="success"
+        size="small"
+      />
+
+      <br />
+      <br />
       <Heading text="Typography" size="x-large" />
       <br />
       <Heading text="Headings" size="medium" />
@@ -93,50 +134,37 @@ export default function App() {
       <Heading text="Heading 1" size="medium" />
       <Heading text="Heading 1" size="small" />
       <br />
-      <Heading text="Label" size="medium" />
 
-      <Label text="Label" weight="400" />
-      <Label text="Label" weight="bold" />
+      <Label label="Label" weight="400" />
 
+      <br />
+      <Label label="Label" weight="bold" />
       <br />
       <Heading text="Title" size="medium" />
       <br />
       <Title text="Title Text" color="danger" />
-
       <Avatar
         imageSrc="https://picsum.photos/300"
         label="JMInterwebs"
         subLabel="Web Developer"
         initials="JM"
       />
-
       <br />
       <br />
-
       <Avatar label="JMInterwebs" subLabel="Web Developer" initials="JM" />
-
       <br />
-
       <Card title="Card title" outsideTitle footer={<p> This is a footer</p>} />
-
       <br />
-
       <Badge size="small" label="badge" type="primary" />
-
       <Badge size="medium" label="badge" type="primary" />
-
       <Badge size="large" label="badge" type="primary" />
-
       <br />
-
       <CalloutBanner
         title="Call Out Banner"
         bodyText="This is the call out text"
         type="info"
       />
-
       <br />
-
       <DefinitionTable
         title="Definition Table"
         data={[
@@ -157,19 +185,14 @@ export default function App() {
           }
         ]}
       />
-
       <br />
-
       <Breadcrumb>
         <Breadcrumb.Home name="Home" link="/" />
         <Breadcrumb.History name="Products" link="/products" />
         <Breadcrumb.Current name="Product" />
       </Breadcrumb>
-
       <br />
-
       <Toggle type="info" label="toggle" id={1} />
-
       <br />
       <HorizontalTabs
         tabsData={[
@@ -183,7 +206,6 @@ export default function App() {
         ]}
         defaultTabIndex={0}
       />
-
       <br />
       <VerticalTabs
         tabsData={[
@@ -197,9 +219,7 @@ export default function App() {
         ]}
         defaultTabIndex={0}
       />
-
       <br />
-
       <Wrapper>
         <List list={['one', 'two', 'Three', 'Bills', 'Bulls']}>
           <List.LineItem> Testing</List.LineItem>
