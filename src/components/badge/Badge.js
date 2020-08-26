@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Label from '../typography/Label';
 
@@ -11,7 +12,20 @@ export default function Badge(props) {
 
   return (
     <span className={`badge-input ${type} badge-${size} ${badgeOutlined}`}>
-      <Label label={label} />
+      <Label label={label} labelColor="white" />
     </span>
   );
 }
+
+Badge.propTypes = {
+  size: PropTypes.string,
+  type: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  outlined: PropTypes.bool
+};
+
+Badge.defaultProps = {
+  size: 'medium',
+  type: 'info',
+  outlined: false
+};
