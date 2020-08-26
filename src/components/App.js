@@ -4,10 +4,12 @@ import Wrapper from 'components/wrapper/Wrapper';
 import Heading from 'components/typography/Heading';
 import Label from 'components/typography/Label';
 import Title from 'components/typography/Title';
+import SubLabel from 'components/typography/SubLabel';
 
 import Button from 'components/button/Button';
 import Input from 'components/form/Input';
 import Checkbox from 'components/form/Checkbox';
+import FormError from 'components/form/FormError';
 import Dropdown from 'components/form/Dropdown';
 import RadioGroup from 'components/form/RadioGroup';
 import Avatar from 'components/avatar/Avatar';
@@ -149,6 +151,9 @@ export default function App() {
       />
       <br />
       <br />
+      <FormError errorText="Danger Will Robinson" />
+      <br />
+      <br />
       <Heading text="Typography" size="x-large" />
       <br />
       <Heading text="Headings" size="medium" />
@@ -159,7 +164,7 @@ export default function App() {
       <br />
 
       <Label label="Label" weight="400" />
-
+      <SubLabel subLabel="Heelo" labelColor="danger" />
       <br />
       <Label label="Label" weight="bold" />
       <br />

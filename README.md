@@ -21,10 +21,10 @@ This package is still very much a work in progress. Updates coming almost daily.
 1. Checkbox
 1. Radio
 1. Select
+1. Form Error
 
 ## Components Too Be Added
 
-1. From compontents
 1. Icons
 1. Pagination
 1. Buttons
