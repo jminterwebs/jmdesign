@@ -19,5 +19,5 @@ SubLabel.propTypes = {
 };
 
 SubLabel.defaultProps = {
-  labelColor: 'dark-light'
+  labelColor: ''
 };
