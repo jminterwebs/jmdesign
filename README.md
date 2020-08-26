@@ -22,12 +22,11 @@ This package is still very much a work in progress. Updates coming almost daily.
 1. Radio
 1. Select
 1. Form Error
+1. Icons using [react-icons](https://react-icons.github.io/search)
 
 ## Components Too Be Added
 
-1. Icons
 1. Pagination
-1. Buttons
 1. ProgressBar
 1. Skeltons
 1. SortableTable
