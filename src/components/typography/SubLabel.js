@@ -6,12 +6,18 @@ import PropTypes from 'prop-types';
 import '../../styles/scss/global.scss';
 
 export default function SubLabel(props) {
-  const { subLabel } = props;
+  const { subLabel, labelColor } = props;
+  const textColor = labelColor ? ` text-${labelColor}-color` : '';
 
-  return <h3 className="subLabel-text">{subLabel}</h3>;
+  return <h3 className={`subLabel-text ${textColor} `}>{subLabel}</h3>;
 }
 
 SubLabel.propTypes = {
   /** Text for subLabel */
-  subLabel: PropTypes.string.isRequired
+  subLabel: PropTypes.string.isRequired,
+  labelColor: PropTypes.string
+};
+
+SubLabel.defaultProps = {
+  labelColor: 'dark-light'
 };
