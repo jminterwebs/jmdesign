@@ -169,3 +169,12 @@ input[type='checkbox'] {
 }
 
 /* Radio Group Styles */
+
+/* Error Label Styles */
+
+.error-label {
+  color: $danger-color;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
