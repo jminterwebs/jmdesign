@@ -9,7 +9,7 @@ export default function Label(props) {
   const { label, weight, displayStyle, labelColor, customClass } = props;
 
   const styles = {
-    'font-weight': weight,
+    fontWeight: weight,
     display: displayStyle
   };
 
@@ -40,10 +40,11 @@ Label.propTypes = {
     'danger',
     'black',
     'white'
-  ]).isRequired
+  ])
 };
 
 Label.defaultProps = {
   weight: '',
-  displayStyle: ''
+  displayStyle: '',
+  labelColor: 'black'
 };
