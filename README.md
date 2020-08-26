@@ -17,6 +17,10 @@ This package is still very much a work in progress. Updates coming almost daily.
 1. Toggle
 1. Typograpgy
 1. VerticalTabs
+1. Button
+1. Checkbox
+1. Radio
+1. Select
 
 ## Components Too Be Added
 
