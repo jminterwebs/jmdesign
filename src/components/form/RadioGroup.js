@@ -31,7 +31,7 @@ RadioGroup.propTypes = {
     text: PropTypes.string,
     subText: PropTypes.string,
     type: PropTypes.string
-  })
+  }).isRequired
 };
 
 RadioGroup.defaultProps = {
