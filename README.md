@@ -23,12 +23,12 @@ This package is still very much a work in progress. Updates coming almost daily.
 1. Select
 1. Form Error
 1. Icons using [react-icons](https://react-icons.github.io/search)
+1. Skeletons
 
 ## Components Too Be Added
 
 1. Pagination
 1. ProgressBar
-1. Skeltons
 1. SortableTable
 1. Tags
 
