@@ -1,0 +1,114 @@
+@import '../../styles/scss/colors.scss';
+
+.progressBar-style {
+  width: 100%;
+  height: 0.5em;
+  border-radius: 5px;
+  &.warning-bar {
+    border: $warning-color solid 1px;
+  }
+  &.info-bar {
+    border: $info-color solid 1px;
+  }
+  &.success-bar {
+    border: $success-color solid 1px;
+  }
+  &.primary-bar {
+    border: $primary-color solid 1px;
+  }
+  &.secondary-bar {
+    border: $secondary-color solid 1px;
+  }
+  &.danger-bar {
+    border: $danger-color solid 1px;
+  }
+  div {
+    height: 0.5em;
+    border-radius: 5px;
+    &.warning-bar {
+      background: $warning-color;
+    }
+    &.info-bar {
+      background: $info-color;
+    }
+    &.success-bar {
+      background: $success-color;
+    }
+    &.primary-bar {
+      background: $primary-color;
+    }
+    &.secondary-bar {
+      background: $secondary-color;
+    }
+    &.danger-bar {
+      background: $danger-color;
+    }
+  }
+}
+
+.segmentedbar-style {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+
+  .segment-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    &:first-child {
+      div {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+    }
+    &:last-child {
+      div {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+    }
+  }
+
+  div {
+    width: -webkit-fill-available;
+    height: 30px;
+
+    &.warning-segment.inactive {
+      border: $warning-color solid 1px;
+    }
+    &.info-segment.inactive {
+      border: $info-color solid 1px;
+    }
+    &.success-segment.inactive {
+      border: $success-color solid 1px;
+    }
+    &.primary-segment.inactive {
+      border: $primary-color solid 1px;
+    }
+    &.secondary-segment.inactive {
+      border: $secondary-color solid 1px;
+    }
+    &.danger-segment.inactive {
+      border: $danger-color solid 1px;
+    }
+
+    &.warning-segment.active {
+      background: $warning-color;
+    }
+    &.info-segment.active {
+      background: $info-color;
+    }
+    &.success-segment.active {
+      background: $success-color;
+    }
+    &.primary-segment.active {
+      background: $primary-color;
+    }
+    &.secondary-segment.active {
+      background: $secondary-color;
+    }
+    &.danger-segment.active {
+      background: $danger-color;
+    }
+  }
+}

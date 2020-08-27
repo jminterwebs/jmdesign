@@ -8,7 +8,7 @@ This package is still very much a work in progress. Updates coming almost daily.
 ##Components to be added to Storybook
 
 1. Breadcrumb
-1. CallourBanner
+1. CalloutBanner
 1. Card
 1. DefinitionTable
 1. HorizontalTabs
@@ -24,11 +24,11 @@ This package is still very much a work in progress. Updates coming almost daily.
 1. Form Error
 1. Icons using [react-icons](https://react-icons.github.io/search)
 1. Skeletons
+1. ProgressBar
 
 ## Components Too Be Added
 
 1. Pagination
-1. ProgressBar
 1. SortableTable
 1. Tags
 

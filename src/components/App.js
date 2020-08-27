@@ -12,6 +12,8 @@ import Checkbox from 'components/form/Checkbox';
 import FormError from 'components/form/FormError';
 import SkeletonFill from 'components/skeleton/SkeletonFill';
 import SkeletonLine from 'components/skeleton/SkeletonLine';
+import ProgessBar from 'components/progressBar/ProgressBar';
+import SegmentedBar from 'components/progressBar/SegmentedBar';
 import Dropdown from 'components/form/Dropdown';
 import RadioGroup from 'components/form/RadioGroup';
 import Avatar from 'components/avatar/Avatar';
@@ -163,6 +165,35 @@ export default function App() {
       <div className="test">
         <SkeletonLine lines={5} />
       </div>
+      <br />
+      <br />
+      <ProgessBar barWidth="250px" type="danger" steps={5} currentStep={3} />
+      <br />
+      <br />
+      <SegmentedBar
+        segments={[
+          {
+            name: 'start',
+            type: 'info',
+            active: 'active'
+          },
+          {
+            name: 'step 2',
+            type: 'info',
+            active: 'inactive'
+          },
+          {
+            name: 'step 3',
+            type: 'info',
+            active: 'inactive'
+          },
+          {
+            name: 'finish',
+            type: 'info',
+            active: 'inactive'
+          }
+        ]}
+      />
       <br />
       <br />
       <SkeletonFill width="500px" height="500px" />
