@@ -22,7 +22,7 @@ export default function Avatar(props) {
       {avatarPicture}
       <div className="avatar-text">
         <Label label={label} />
-        <SubLabel subLabel={subLabel} />
+        <SubLabel subLabel={subLabel} labelColor="dark-light" />
       </div>
     </div>
   );
