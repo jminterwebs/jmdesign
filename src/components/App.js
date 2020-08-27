@@ -10,6 +10,8 @@ import Button from 'components/button/Button';
 import Input from 'components/form/Input';
 import Checkbox from 'components/form/Checkbox';
 import FormError from 'components/form/FormError';
+import SkeletonFill from 'components/skeleton/SkeletonFill';
+import SkeletonLine from 'components/skeleton/SkeletonLine';
 import Dropdown from 'components/form/Dropdown';
 import RadioGroup from 'components/form/RadioGroup';
 import Avatar from 'components/avatar/Avatar';
@@ -152,6 +154,18 @@ export default function App() {
       <br />
       <br />
       <FormError errorText="Danger Will Robinson" />
+
+      <br />
+      <br />
+      <div className="test">
+        <SkeletonLine lines={4} />
+      </div>
+      <div className="test">
+        <SkeletonLine lines={5} />
+      </div>
+      <br />
+      <br />
+      <SkeletonFill width="500px" height="500px" />
       <br />
       <br />
       <Heading text="Typography" size="x-large" />

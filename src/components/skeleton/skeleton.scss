@@ -1,0 +1,21 @@
+@import '../../styles/scss/colors.scss';
+
+.skeleton-fill {
+  background: $dark-light-color;
+  border-radius: 7px;
+}
+
+.skeleton-line {
+  background-image: linear-gradient(
+    0deg,
+    $dark-light-color 15px,
+    rgba(255, 255, 255, 0) 15px
+  );
+  background-size: 30px 30px;
+  margin: 15px;
+}
+
+.test {
+  background: blue;
+  width: 50%;
+}
