@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './skeleton.scss';
-import SkeletonFill from './SkeletonFill';
 
 export default function SkeletonLine(props) {
   const { lines } = props;
@@ -15,6 +14,6 @@ export default function SkeletonLine(props) {
   return <div style={styles} className="skeleton-line" />;
 }
 
-SkeletonFill.propTypes = {
+SkeletonLine.propTypes = {
   lines: PropTypes.number.isRequired
 };
