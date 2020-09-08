@@ -14,7 +14,7 @@ import Tag from 'components/tag/Tag';
 import DataTable from 'components/dataTable/DataTable';
 import SkeletonFill from 'components/skeleton/SkeletonFill';
 import SkeletonLine from 'components/skeleton/SkeletonLine';
-import ProgessBar from 'components/progressBar/ProgressBar';
+import ProgressBar from 'components/progressBar/ProgressBar';
 import SegmentedBar from 'components/progressBar/SegmentedBar';
 import Dropdown from 'components/form/Dropdown';
 import RadioGroup from 'components/form/RadioGroup';
@@ -205,7 +205,7 @@ export default function App() {
       </div>
       <br />
       <br />
-      <ProgessBar barWidth="250px" type="danger" steps={5} currentStep={3} />
+      <ProgressBar barWidth="250px" type="danger" steps={5} currentStep={3} />
       <br />
       <br />
       <SegmentedBar
@@ -247,7 +247,7 @@ export default function App() {
       <br />
 
       <Label label="Label" weight="400" />
-      <SubLabel subLabel="Heelo" labelColor="danger" />
+      <SubLabel subLabel="Hello" labelColor="danger" />
       <br />
       <Label label="Label" weight="bold" />
       <br />

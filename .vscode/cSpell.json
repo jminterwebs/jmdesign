@@ -31,7 +31,10 @@
     "roadmap",
     "scrollbar",
     "CALLOUT",
-    "jmdesign"
+    "jmdesign",
+    "interwebs",
+    "segmentedbar",
+    "noninteractive"
   ],
   "flagWords": ["hte"]
 }

@@ -1,4 +1,4 @@
-Design System for React. Inspired by a mix of Polaris, Bootstratp and Material.
+Design System for React. Inspired by a mix of Polaris, Bootstrap and Material.
 
 Storybook page [here](https://jmdesign.netlify.com/)
 
@@ -15,7 +15,7 @@ This package is still very much a work in progress. Updates coming almost daily.
 1. Image
 1. List
 1. Toggle
-1. Typograpgy
+1. Typography
 1. VerticalTabs
 1. Button
 1. Checkbox
