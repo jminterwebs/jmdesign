@@ -10,6 +10,8 @@ import Button from 'components/button/Button';
 import Input from 'components/form/Input';
 import Checkbox from 'components/form/Checkbox';
 import FormError from 'components/form/FormError';
+import Tag from 'components/tag/Tag';
+import DataTable from 'components/dataTable/DataTable';
 import SkeletonFill from 'components/skeleton/SkeletonFill';
 import SkeletonLine from 'components/skeleton/SkeletonLine';
 import ProgessBar from 'components/progressBar/ProgressBar';
@@ -132,6 +134,42 @@ export default function App() {
         size="small"
       />
 
+      <br />
+      <br />
+      <DataTable
+        title="Detail List"
+        currencyColumns={['Net Sales', 'Price']}
+        totalsColumns={['', '', '', 'Net Quantity', 'Net Sales']}
+        data={[
+          {
+            Product: 'Emerald Silk Gown',
+            Price: 876.0,
+            'Sku Number': 124689,
+            'Net Quantity': 140,
+            'Net Sales': 122500.0
+          },
+          {
+            Product: 'Mauve Cashmere Scarf',
+            Price: 230.0,
+            'Sku Number': 124533,
+            'Net Quantity': 83,
+            'Net Sales': 19090.0
+          },
+          {
+            Product: 'Wool Blazer',
+            Price: 445.0,
+            'Sku Number': 124518,
+            'Net Quantity': 32,
+            'Net Sales': 14240.0
+          }
+        ]}
+      />
+      <br />
+      <br />
+
+      <Tag id="one" size="small" type="danger" label="testing" removable />
+      <Tag id="one" size="medium" type="danger" label="testing" removable />
+      <Tag id="one" size="large" type="danger" label="testing" removable />
       <br />
       <br />
 
