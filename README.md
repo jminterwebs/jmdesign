@@ -1,3 +1,5 @@
+I am in the process of updating this for the newest verison of React and Storybook. Stay tuned!
+
 Design System for React. Inspired by a mix of Polaris, Bootstrap and Material.
 
 Storybook page [here](https://jmdesign.netlify.com/)
